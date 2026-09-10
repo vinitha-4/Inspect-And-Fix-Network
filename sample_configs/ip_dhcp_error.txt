@@ -1,0 +1,14 @@
+hostname Switch3
+
+vlan 10
+ name Management
+
+interface Vlan10
+ ip address 192.168.10.255 255.255.255.0
+
+ip default-gateway 10.0.0.1
+
+ip dhcp pool FACULTY_POOL
+ network 192.168.20.0 255.255.255.0
+ default-router 192.168.99.1
+

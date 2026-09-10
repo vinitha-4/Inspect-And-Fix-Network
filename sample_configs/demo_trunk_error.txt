@@ -1,0 +1,15 @@
+hostname Switch1
+
+vlan 10
+ name Students
+
+vlan 20
+ name Faculty
+
+vlan 30
+ name Administration
+
+interface GigabitEthernet0/1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,30
+
